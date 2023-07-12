@@ -116,6 +116,8 @@ Now we will create a registration form on the home page of this server. For this
 </html>
 ```
 We upload the register.html file to the home page of our web server and use body-parser to extract the user data from it:
+
+```
 const express = require('express');
 
 var parseUrl = require('body-parser');
@@ -240,6 +242,11 @@ app.post('/register', encodeUrl, (req, res) => {
 app.listen(4000, ()=>{
     console.log("Server running on port 4000");
 });
+
+```
+failregistration.html file:
+
+```
 <!--failReg.html-->
 <!DOCTYPE html>
 <html lang="en">
@@ -258,10 +265,14 @@ app.listen(4000, ()=>{
     </div>
   </body>
 </html>
+
+```
 All of the above was code written for the registration form!
 
 We will create a login form
 To create a login form, first create a file named login.html and add the following codes to it:
+
+```
 <!--login.html-->
 <!DOCTYPE html>
 <html lang="en">
@@ -291,7 +302,11 @@ To create a login form, first create a file named login.html and add the followi
     </div>
   </body>
 </html>
+
+```
 Now we enter the codes of the login form in our server.js file:
+
+```
 //server.js
 
 // upload `login.html` file to /login page
@@ -351,6 +366,12 @@ app.post("/dashboard", encodeUrl, (req, res)=>{
         });
     });
 });
+
+```
+
+faillog.html file
+
+```
 <!--failLog.html-->
 <!DOCTYPE html>
 <html lang="en">
@@ -369,7 +390,7 @@ app.post("/dashboard", encodeUrl, (req, res)=>{
     </div>
   </body>
 </html>
-
+```
 All the code in server.js:
 ```
 const express = require('express');
