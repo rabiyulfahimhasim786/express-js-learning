@@ -548,6 +548,10 @@ app.post("/dashboard", encodeUrl, (req, res)=>{
 
 app.listen(4000, ()=>{
     console.log("Server running on port 4000");
-});```
+});
+
+```
 
 Thank you for your attention!!!
+
+[Eeferences](https://dev.to/jahongir2007/creating-a-login-and-registration-form-with-nodejs-expressjs-and-mysql-database-160n)
